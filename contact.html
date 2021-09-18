@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Contacto</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <header class="header_menu">
+        <div>  <!-- Encabezado -->
+            <div class="flex-container">  <!-- Encabezado que contiene el logo / Navegación / Boton de contacto-->
+                
+                <div class="c-navigation__left"><!-- Logo -->
+                    <a href="./index.html" class="c-logo">
+                        <img src="./img/pilotPredict_logo.png"  alt="">
+                    </a>
+                </div>
+        
+                <div class="c-navigation__center">
+                    <nav>
+                        <ul>
+                        <a href="./BusinessCases.html">Casos de Uso</a>
+                        <a href="./blog.html">Blog</a>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <div class="c-navigation__right"><!-- a futor implementare un Boton de contacto  -->
+                   <div class="c-menu-cta__link c-menu-cta__link--cta"> 
+                    <a href="./contact.html" class="c-button c-button--secondary c-button--small">
+                        <span>
+                            Contacta a un experto
+                        </span>
+                    </a>
+                 </div>
+                </div>
+        
+            </div>
+        </div>
+        
+        </header>
+   
+<main class= "main_class"> 
+    
+
+<section class="o-section o-section--contact-sales">
+    <div class="o-container o-container--narrow">
+        <div class="c-contact-form-wrapper">
+
+
+    <form class="background-bc" action="enviar.php" method="GET">
+
+        <fieldset>
+        <legend>Rellena el formulario para contactarte con un experto</legend>
+        
+        <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="name" required>  <!-- tipo text -->
+        </div>
+        <br>
+
+        <div> 
+        <label for="nombre">Apellido:</label>
+        <input type="text" id="name" required>  <!-- tipo text -->
+        </div>
+        <br>
+
+        <div> 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required> <!-- tipo email -->
+        </div>
+        <br>
+
+        <div>
+        <label for="Paises">Paises:</label>
+        <select name="" id="">
+            <option value="arg">Argentina</option>
+            <option value="chi">Chile</option>
+            <option value="per">Perú</option>
+            <option value="col">Colombia</option>
+            <option value="mex">Mexico</option>
+            <option value="Bra">Brasil</option>
+        </select>
+        </div>
+        <br>
+
+        <div>
+        <label for="Paises">Industria:</label>
+        <select name="" id="">
+            <option value="fin">Finanzas</option>
+            <option value="tec">Tecnologia</option> <!-- el valor seleccionado por default -->
+            <option value="trans">Transporte</option>
+            <option value="com">Comercio</option>
+            <option value="salfit">Salud y Fitness</option>
+        </select>
+        </div>
+        <br>
+
+
+        <div>
+        <input type="checkbox" name="acepta" id="acepta"> Haga clic aquí si desea optar por recibir correos electrónicos de PilotPredict
+        </div>
+        <br>
+     
+        <input type="submit" value="Enviar ahora" >
+        <input type="reset" value="Limpiar" >
+    
+      </fieldset>
+    </form>
+     </div>
+  </div>
+
+</section>
+</main>
+
+  <!-- Pie de Pagina -->
+  <footer class="c-footer__menu">  
+    
+    <div class="c-footer__menu-column footer--column">
+        <a href="./index.html">
+        <img class="logo_footer" src="img/pilotPredict_logo.png">
+        </a>
+    </div>
+    
+    <div class="c-footer__menu-column footer--column">
+        <h5 class="u-b0 u-bold">
+            <span>Mantente conectado</span>
+        </h5>
+        <ul>
+            <li>
+                <img src="img/github_icon.svg" width=24px>
+                <span>Github</span>
+            </li>
+            <li><img src="img/twitter_icon.png" width=24px>                
+                <span>Twitter</span></li>
+            <li><img src="img/youtube_icon.png" width=24px>
+                <span>Youtube</span>
+            </li>
+            <li><img src="img/phonenumber_icon.png" width=24px>
+                <span>+51 999 666 712</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="c-footer__menu-column footer--column">
+        <h5 class="u-b0 u-bold">
+            <span>Por qué usar nuestro servicio</span>
+        </h5>
+        <ul>
+            <li>Informe de analistas</li>
+            <li>Responsabilidad Corporativa</li>
+            <li>Prácticas de seguridad</li>
+            
+        </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>
