@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-<header class="header_menu">
-<div>  <!-- Encabezado -->
-    <div class="flex-container">  <!-- Encabezado que contiene el logo / Navegación / Boton de contacto-->
-        
-        <div class="c-navigation__left"><!-- Logo -->
+<!-- <header class="header_menu"></header>
+ -->
+<!--     
+<div>  
+    <div class="flex-container">  
+        <div class="c-navigation__left">
             <a href="./index.html" class="c-logo">
                 <img src="./img/pilotPredict_logo.png"  alt="">
             </a>
@@ -33,46 +35,65 @@
             </nav>
         </div>
 
-        <div class="c-navigation__right"><!-- a futor implementare un Boton de contacto  -->
+        <div class="c-navigation__right">
            <div class="c-menu-cta__link c-menu-cta__link--cta"> 
             <a href="./contact.html" class="c-button c-button--secondary c-button--small">
                 <span>
                     Contacta a un experto
                 </span>
             </a>
-         </div>
+          </div>
         </div>
 
     </div>
-</div>
+</div> -->
+
+<header class="header_menu">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/pilotPredict_logo.png" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span></span>  
+       <span></span>  
+       <span></span>
+    </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./BusinessCases.html">Casos de Uso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+        </ul>
+        <div class="c-menu-cta__link c-menu-cta__link--cta"> 
+            <a href="./contact.html" class="c-button c-button--secondary c-button--small">
+                <span>
+                    Contacta a un experto
+                </span>
+            </a>
+        </div>
+      </div>
+    </div>
+</nav>
 
 </header>
 
 <main class= "main_class"> 
 
     <section>
-        <div class="box-image">
-            <img src="/img/back_ground_general.jpg" class="img-1 "width="1350" height="800">
-            <h1 class="img-2" width="1350">
-                Construya relaciones significativas con los clientes en cualquier canal.
-            </h1>
-            <img src="/img/machinelearning_page_3.jpg" class="img-3" width="630">  
-        </div>
+
+    <div class="box-image">
+ <img src="/img/back_ground_general.jpg" class="img-1 "width="1350" height="800">
+ <h1 class="img-2" width="1350"> Construya relaciones significativas con los clientes en cualquier canal.</h1>
+ <img src="/img/machinelearning_page_3.jpg" class="img-3" width="630">  
+    </div>
+
     </section>   
 
 
-
-
-
     <section id="Clientes">
-  <!--         
-            <ul>
-                <li class="ClientsGeneric">Cliente 1</li>
-                <li class="ClientsGeneric">Cliente 2</li>
-                <li class="ClientsGeneric">Cliente 3</li>
-                <li class="ClientsGeneric">Cliente 4</li>
-                <li class="ClientsGeneric">Cliente 5</li>
-            </ul> -->
             <div>
                 <h2 id="title_clients">Clientes</h2>
             </div>
@@ -270,6 +291,10 @@
     </div>
 
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 </html>
