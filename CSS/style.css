@@ -55,6 +55,14 @@ abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite
   background: 0 0;
 }
 
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
 .h1, h1 {
   font-size: calc(1.375rem + 1.5vw);
   margin-top: 0;
@@ -101,6 +109,11 @@ ol, ul {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+/* Anunciós en principal*/
+
+
+/* Fin de Anunciós en principal*/
 
 .c-header__slider .swiper-wrapper {
   width: 100%;
@@ -250,11 +263,18 @@ li {
   margin-left: 5px;
  }
 
+.main_class_index{
+  background-image: linear-gradient(0deg, rgb(233, 229, 229) 8%, #ffffff 100%);
+  width: 100%;
+  height: auto;
+}
+
 .main_class{
   background-image: linear-gradient(0deg, rgb(233, 229, 229) 8%, #ffffff 100%);
   width: 100%;
   height: auto;
-
+  padding-top: 100px;
+  padding-bottom: 10vh;
 }
 
 
@@ -553,14 +573,12 @@ padding-inline-start: 40px;
   align-items: center;
 }
 
-/* eliminar la imagen al reducir width */
+/*eliminar la imagen al reducir width */
 @media only screen and (max-width: 650px) {
 .c-header__right {
   display: none;
 }
-}
-
-
+} 
 
 @keyframes bounce{
   20%,50%,80%,to{
@@ -817,6 +835,28 @@ table {
 
 /* Estilos para pagina blog */
 
+.col-md-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4.4445rem 0 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px){
+.col-md-3 {
+    width: 70%;
+    padding: 1.7778rem 0 0 0;
+}
+}
+
+
 
 .c-card {
   width: 100%;
@@ -868,7 +908,6 @@ table {
   margin-bottom: 8px;
 }
 
-
 /* Cartilla */
 
 .c-card__header {
@@ -891,6 +930,10 @@ table {
   backface-visibility: hidden;
 }
 
+.c-card--article-case-study .u-media-wrapper.u-media-wrapper--article-thumb, .c-card--article-event .u-media-wrapper.u-media-wrapper--article-thumb {
+  padding-bottom: 25%;
+}
+
 /* para imagen de cartillas */
 .u-media-wrapper.u-media-wrapper--article-thumb img {
   position: absolute;
@@ -908,8 +951,27 @@ table {
 }
 
 
+.c-card--article, .c-card--channels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+
 .c-card--article .c-card__header, .c-card--channels .c-card__header {
   position: relative;
+}
+
+.c-card--article-case-study, .c-card--article-event {
+  font-size: 0;
+  background-color: #fff;
 }
 
 .c-card-list--resources-hub .c-card-list__item {
@@ -1080,12 +1142,6 @@ font-size: 0.9rem;
   transition: all .2s cubic-bezier(.455,.03,.515,.955); 
 }
 
-
-
-.o-section--contact-sales {
-  padding-bottom: 10vh;
-}
-
 .o-page-wrapper--contact-sales .o-section--contact-sales {
   position: relative;
   z-index: 3;
@@ -1208,3 +1264,60 @@ font-size: 0.9rem;
   }
   }
   
+
+
+  /* Pagina business cases */
+
+  .o-section-wrapper--resources-hub-list {
+    padding-left: 8.33333%;
+    padding-right: 8.33333%;
+}
+
+.o-section-wrapper--resources-hub {
+  position: relative;
+  z-index: 3;
+}
+
+.o-page-wrapper--case-study-hub {
+  position: relative;
+  z-index: 3;
+}
+
+
+.c-card-list {
+  padding: 4.4445rem 0 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+.c-card-list--resources-hub {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+
+@media (max-width: 800px)
+{
+.c-card-list--resources-hub:after {
+    width: 50%;
+}
+}
+
+.c-card-list--resources-hub:after {
+  width: 32.5%;
+  max-width: 390px;
+}
+
+.o-section-outer-wrapper--platform-integrations-list, .o-section-outer-wrapper--resources-hub-list, .o-section-wrapper--platform-integrations-list, .o-section-wrapper--resources-hub-list {
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
+}
+
+.o-section-outer-wrapper--resources-hub, .o-section-wrapper--resources-hub {
+  position: relative;
+  z-index: 3;
+}
+
