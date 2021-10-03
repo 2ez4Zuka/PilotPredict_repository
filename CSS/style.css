@@ -55,6 +55,10 @@ abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite
   background: 0 0;
 }
 
+legend {
+  margin-bottom: 90px;
+}
+
 figure {
   display: block;
   margin-block-start: 1em;
@@ -1040,8 +1044,8 @@ table {
 }
 
 .background-bc {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 li {

@@ -18,9 +18,36 @@ main section {
   padding-bottom: 10vh;
 }
 
+.section_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #e9e5e5), to(#ffffff));
+  background-image: linear-gradient(0deg, #e9e5e5 8%, #ffffff 100%);
+  color: black;
+  width: 100%;
+  height: 300px;
+}
+
+.background-bc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .o-container--narrow {
   padding-left: 12.5%;
   padding-right: 12.5%;
+  margin-top: 50px;
 }
 
 .c-contact--form--wraper {

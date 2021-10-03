@@ -19,10 +19,30 @@ main {
 
 
 
+.section_contact{
+        display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+		background-image:$footer__background;
+	    color: $color__big;
+	    width: 100%;
+	    height: 300px;
+	}
+
+
+
+.background-bc {
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
+
 .o-container{
 	&--narrow{
 		padding-left: 12.5%;
-		padding-right: 12.5%;
+		padding-right: 12.5%;	
+		margin-top: 50px;
+
 	}
 }
 
