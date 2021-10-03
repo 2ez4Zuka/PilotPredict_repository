@@ -1,6 +1,7 @@
-
 $color__big:black;
 $footer__background: linear-gradient( 0deg, rgb(233, 229, 229) 8%, #ffffff 100%);
+$media_form: '(max-width: 1140px)';
+$footer_width: '(min-width: 600px)';
 
 main {
     section {
@@ -16,27 +17,38 @@ main {
     }
 }
 
-/* formulario */
 
-.o-container--narrow {
-	padding-left: 12.5%;
-	padding-right: 12.5%;
+
+.o-container{
+	&--narrow{
+		padding-left: 12.5%;
+		padding-right: 12.5%;
+	}
 }
-.c-contact-form-wrapper {
-	background-color: #fff;
-	border-radius: 10px;
-	-webkit-box-shadow: 6px 6px 30px 0 rgb(60, 81, 99 / 11%);
-	box-shadow: 6px 6px 30px 0 rgb(60, 81, 99 / 11%);
-	max-width: 1080px;
-	padding: 3.5556rem 8.33333%;
-	margin: 0 auto;
+
+.c-contact{
+	&--form{
+		&--wraper{
+			background-color: #fff;
+			border-radius: 10px;
+			-webkit-box-shadow: 6px 6px 30px 0 rgb(60, 81, 99 / 11%);
+			box-shadow: 6px 6px 30px 0 rgb(60, 81, 99 / 11%);
+			max-width: 1080px;
+			padding: 3.5556rem 8.33333%;
+			margin: 0 auto;
+		}
+    }
 }
-@media (max-width: 1140px) {
-	.o-container--narrow {
+
+
+@media #{$media_form} {
+	.o-container{
+		&--narrow{
 		padding-left: 4.16667%;
 		padding-right: 4.16667%;
+		}
 	}
-	.o-container {
+	.o-container{
 		padding-left: 4.16667%;
 		padding-right: 4.16667%;
 	}
@@ -99,7 +111,7 @@ h2 {
 	color: #999;
 	padding-top: 50px;
 }
-@media screen and (min-width: 600px) {
+@media screen and #{$footer_width} {
 	.r-footer {
 		>* {
 			flex: 1;
