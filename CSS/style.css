@@ -27,6 +27,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  width: 100%;
+  max-width: 1450px;
+  padding-top: 80px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +80,11 @@ figure {
     font-weight: 500;
     line-height: 1.2;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #171717;
+}
+
 
 ol, ul {
   list-style-type: none;
@@ -212,6 +223,14 @@ li {
   z-index: 4;
 }
 
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .container-fluid{
   background-color: rgb(233, 229, 229);
@@ -1326,3 +1345,86 @@ font-size: 0.9rem;
   z-index: 3;
 }
 
+/* Pagina Developer */
+
+.o-card {
+width: 100%;
+border: 3px solid rgba(255,255,255,0);
+border-radius: 3px;
+margin-bottom: 30px;
+background-color: #fff;
+box-shadow: 0 0 5px 5px rgb(23 23 23 / 2%);
+transition: border .1s ease-in;
+}
+
+.o-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 30px 20px 30px;
+}
+
+.o-card__heading {
+  margin-bottom: 30px;
+}
+
+.c-img{
+  display: block;
+}
+
+.o-card__heading .c-img, .o-feature__heading .c-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-style: none;
+}
+
+.c-ttl--card {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.c-ttl {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.c-link{
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.mb-5{
+  margin-bottom: 3rem!important;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px){
+.c-ttl--section{
+  margin-top: 30px;
+  line-height: 43px;
+}
+
+
+
+}
